@@ -1,0 +1,4 @@
+0 = order 
+1 = proses 
+2 = sent 
+3 = finshed
