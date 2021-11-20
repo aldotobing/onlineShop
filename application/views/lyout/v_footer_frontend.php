@@ -10,7 +10,7 @@
          Anything you want
      </div>
      <!-- Default to the left -->
-     <strong>SURABAYA-INDONESIA &copy; 2021 <a href="https://linktr.ee/Ship2indo">TURKI BA-HADI</a>.</strong> All rights reserved.
+     <strong>DEVELOPMENT PURPOSE</a>.</strong> All rights reserved.
  </footer>
  </div>
  <!-- ./wrapper -->
