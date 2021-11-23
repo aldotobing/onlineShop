@@ -15,8 +15,9 @@
             <div class="col-sm-12">
                 <?php echo form_open('shopping/update'); ?>
 
-                <table class="table" cellpadding="6" cellspacing="1" style="width:100%">
-                    <tr>
+                <table class="table table-responsive-sm" cellpadding="6" cellspacing="1" style="width:100%">
+                    <thead class="thead-dark">
+                        <tr>
                         <th width="100px">QTY</th>
                         <th>Goods Name</th>
                         <th style="text-align:right">Price/Qty</th>
@@ -24,7 +25,7 @@
                         <th style="text-align:right">Sub-Total</th>
                         <th style="text-align:center">Weight</th>
                         <th class="text-center">Action</th>
-                    </tr>
+                    </tr> </thead>
 
                     <?php $i = 1; ?>
 
@@ -73,7 +74,7 @@
                     <?php } ?>
                     <tr>
                         <td class="right">
-                            <h3>Total : </h3>
+                            <h4>Total : </h4>
                         </td>
                         <td class="right">
                             <h3>Rp. <?php echo number_format($total_final_price, 0);
