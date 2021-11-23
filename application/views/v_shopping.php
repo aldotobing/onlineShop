@@ -87,9 +87,9 @@
                         <td></td>
                     </tr>
                 </table>
-                <button type="submit" class="btn btn-primary tbn-flat"><i class="fas fa-save"></i> Update Cart</button>
-                <a href="<?= base_url('shopping/clear') ?>" class="btn btn-danger tbn-flat"><i class="fa fa-recycle"></i> Clear Cart</a>
-                <a href="<?= base_url('shopping/checkout')  ?>" class="btn btn-success tbn-flat"><i class="fa fa-check-square"></i> Check Out</a>
+                <button type="submit" class="btn btn-primary btn-flat btn-sm mr-1"><i class="fas fa-save"></i> Update Cart</button>
+                <a href="<?= base_url('shopping/clear') ?>" class="btn btn-danger btn-flat btn-sm mr-1"><i class="fa fa-recycle"></i> Clear Cart</a>
+                <a href="<?= base_url('shopping/checkout')  ?>" class="btn btn-success btn-flat btn-sm mr-1"><i class="fa fa-check-square"></i> Check Out</a>
                 <?php echo form_close(); ?>
                 <hr>
             </div>
