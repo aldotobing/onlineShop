@@ -77,9 +77,9 @@
                             <h4>Total : </h4>
                         </td>
                         <td class="right">
-                            <h3>Rp. <?php echo number_format($total_final_price, 0);
+                            <h4>Rp. <?php echo number_format($total_final_price, 0);
                                    // var_dump($this->cart->total());
-                                    ?></h3>
+                                    ?></h4>
                         </td>
                         <th>Weight Total : <?= $total_weight ?> Gr</th>
                         <td></td>
