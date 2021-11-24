@@ -117,12 +117,11 @@
                                         </button>
                                     </div>
                                 </div>
-                                <?php echo form_close(); ?>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <?php echo form_close(); ?>
             <?php } ?>
             <!-- SweetAlert2 -->
             <script src="<?= base_url() ?>template/plugins/sweetalert2/sweetalert2.min.js"></script>
