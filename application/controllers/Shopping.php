@@ -59,7 +59,7 @@ class Shopping extends CI_Controller
             $this->cart->update($data);
             $i++;
         }
-        $this->session->set_flashdata('Great', 'Shopping Cart Have Update');
+        $this->session->set_flashdata('Great', 'Shopping Cart Updated');
         redirect('shopping');
     }
     public function clear()
