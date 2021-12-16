@@ -44,24 +44,28 @@
                         str_replace('index.php/', '', current_url())
                     );
 
-                    //CHECK IF THE VALUE OF DISCOUNT IS NULL, SO IT SET TO DEFAULT VALUE OF 0 (ZERO)
-                    //TO AVOID ERROR MULTIPLICATION OF NULL VALUE
+                    /*CHECK IF THE VALUE OF DISCOUNT IS NULL OR IT'S PROBABLY NULL, 
+                    SO IT SETS TO DEFAULT VALUE OF 0 (ZERO) TO AVOID ERROR MULTIPLICATION OF NULL VALUE*/
                     if ($value->discount == null) {
                         $value->discount = 0;
                     }
-                    // var_dump($value->discount);
+                    /*END OF NULL VALUE DISCOUNT VALUE CHECK*/
 
-                    //CHECK IF THERE IS A DISCOUNT AMOUNT IN EACH ITEM
+                    //var_dump($value->discount); //IGNORE THIS
+
+                    /*CHECK IF THERE IS A DISCOUNT AMOUNT IN EACH ITEM*/
                     if ($value->discount <= 0 || $value->discount == null) {
-                        //IF RESULT IS 0 OR HAS A NULL VALUE (NO DISCOUNT), THEN FINAL PRICE = VALUE REAL PRICE (AS IN DATABASE), NO CHANGES
+                        //IF RESULT IS 0 OR HAS A NULL VALUE (NO DISCOUNT), 
+                        //THEN FINAL PRICE WILL BE THE VALUE OF REAL PRICE (AS IN DATABASE), NO CHANGES NEEDED
                         $final_price = $value->price;
                     } else {
-                        //CALCULATE THE AMOUNT OF DISCOUNT
+                        //THE RESULT IS GREATER THAN 0 AND !=NULL, THEN CALCULATE THE AMOUNT OF DISCOUNT
                         $disc_value = $value->price * ($value->discount / 100);
-                        //IF RESULT IS GREATER THAN 0 THAT MEANS IT HAS A DISCOUNT VALUE, CALCULATE THE FINAL PRICE TO GET THE PRICE AFER DISCOUNT
-                        //SO IT WILL BE REAL PRICE - AMOUNT OF DISCOUNT ABOVE
+                        //CALCULATE THE FINAL PRICE TO GET THE PRICE AFER DISCOUNT, 
+                        //SO IT WILL BE (REAL PRICE - AMOUNT OF DISCOUNT) ABOVE
                         $final_price = ($value->price - $disc_value);
                     }
+                    /*END ITEM DISCOUNT CHECK*/
 
                     ?> <div class="card bg-light d-flex flex-fill">
                         <div class="card-head">
