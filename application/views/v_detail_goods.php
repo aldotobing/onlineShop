@@ -112,7 +112,7 @@
       </script>
       <!-- jQuery -->
       <script src="<?= base_url() ?>template/plugins/jquery/jquery.min.js"></script>
-      <!-- Bootstrap 4 -->
+      <!-- Bootstrap 4-->
       <script>
           $(function() {
               var Toast = Swal.mixin({
